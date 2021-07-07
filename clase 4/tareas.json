@@ -1,0 +1,22 @@
+[
+    {
+        "titulo": "Hacer cronograma ARCHIVO",
+        "descripcion": "Describir detalladamente...",
+        "status": "En proceso"
+    },
+    {
+        "titulo": "Hacer comida",
+        "descripcion": "Describir detalladamente...ARCHIVO",
+        "status": "Terminado"
+    },
+    {
+        "titulo": "Hacer maleta",
+        "descripcion": "Describir detalladamente...ARCHIVO",
+        "status": "En proceso"
+    },
+    {
+        "titulo": "Hacer oso",
+        "descripcion": "Describir detalladamente...ARCHIVO",
+        "status": "Pendiente"
+    }
+]
