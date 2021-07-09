@@ -1,22 +1,26 @@
 [
     {
-        "titulo": "Hacer cronograma ARCHIVO",
-        "descripcion": "Describir detalladamente...",
-        "status": "En proceso"
+        "titulo": "Repasar JS",
+        "estado": "terminada"
     },
     {
-        "titulo": "Hacer comida",
-        "descripcion": "Describir detalladamente...ARCHIVO",
-        "status": "Terminado"
+        "titulo": "Armar aplicación de Tareas",
+        "estado": "en progreso"
     },
     {
-        "titulo": "Hacer maleta",
-        "descripcion": "Describir detalladamente...ARCHIVO",
-        "status": "En proceso"
+        "titulo": "Break",
+        "estado": "pendinte"
     },
     {
-        "titulo": "Hacer oso",
-        "descripcion": "Describir detalladamente...ARCHIVO",
-        "status": "Pendiente"
+        "titulo": "Auri",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "bañarme",
+        "estado": "pendiente"
+    },
+    {
+        "titulo": "chalupas",
+        "estado": "pendiente"
     }
 ]

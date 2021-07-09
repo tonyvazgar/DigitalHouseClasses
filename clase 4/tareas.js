@@ -1,54 +1,44 @@
 const fs = require('fs');
 
-console.log('Aplicación tareas');
-console.log('------------------');
-console.log('');
-let tarea = {
-    titulo: 'Hacer cronograma',
-    descripcion: 'Describir detalladamente...',
-    status: 'En proceso'
-}
+let archivoTareas = {
+    archivo: 'tareas.json',
+    leer: function () {
+        return JSON.parse(fs.readFileSync(this.archivo, 'utf-8'));
+    },
 
-let tarea1 = {
-    titulo: 'Hacer comida',
-    descripcion: 'Describir detalladamente...',
-    status: 'Terminado'
-}
-let tarea2 = {
-    titulo: 'Hacer maleta',
-    descripcion: 'Describir detalladamente...',
-    status: 'En proceso'
-}
-let tarea3 = {
-    titulo: 'Hacer oso',
-    descripcion: 'Describir detalladamente...',
-    status: 'En proceso'
-}
+    // Micro desafío 2.1 - Escribir la tareas en el archivo JSON
+    // ---------------
+    // escribirJSON:
+    // El metodo recibe un array de tareas
+    // JSON.stringify() para transformar el array a JSON
+    // fs.writeFileSync()para escribir el JSON obtenido a el archivo
+    escribirJSON: function (tareas) {
+        let tareasArreglo = JSON.stringify(tareas);
+        fs.writeFileSync('./tareas.json', tareasArreglo);
+    },
 
-let tareas = [tarea, tarea1, tarea2, tarea3];
-// console.log(tareas);
+    // Micro desafío 2.2 - Guardar la tarea en el archivo JSON
+    // ---------------
+    // Usar las funciones ya escritas previamente de lectura y escritura al JSON
+    // No olvidar hacer uso de push()
+    guardarTarea: function (tarea) {
+        let tareas = this.leer();
+        tareas.push(tarea);
+        this.escribirJSON(tareas);
+    },
 
-// let i = tareas.length;
-// while(i){
-//     console.log(tareas[i - 1].titulo);
-//     i--;
-// }
-
-let tareasJSON = JSON.stringify(tareas);
-console.log(tareasJSON);
-console.log("********");
-
-var desdeArchivo;
-try {
-    desdeArchivo = JSON.parse(fs.readFileSync('tareas.json', 'utf8'))
-    console.log(desdeArchivo)
-} catch (err) {
-    console.error(err)
-}
-
-for(let i = 0; i < desdeArchivo.length; i++){
-    let tarea = desdeArchivo[i];
-    if(tarea.status != "Terminado"){
-        console.log(tarea);
+    // Micro desafío 3, aplicar filter para traer solo las tareas pendientes
+    // array.filter((elemento, index, todosLosElementos)=>{
+    //     condicional de filtrado
+    // })
+    leerPorEstado: function (status) {
+        let tareas = this.leer();
+        let i = tareas.filter(function (param) {
+            return param.estado == status
+        });
+        return i;
     }
+
 }
+
+module.exports = archivoTareas;
