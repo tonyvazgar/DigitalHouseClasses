@@ -1,0 +1,358 @@
+/*--------Video--------*/
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Roboto';
+    background-color: #ebebeb;
+}
+h3{
+    font-size: 24px;
+}
+h3,
+.description{
+    color: #666;
+}
+p{
+    font-size: 12px;
+}
+
+main{
+    width: 90%;
+    margin: auto;
+}
+main section h3{
+    padding: 10px 0;
+}
+main section article{
+    background-color: #fff;
+}
+
+main section article img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+}
+.barra{
+    width: 50%;
+    display: flex;
+    background-color: #FFF;
+    border-radius: 5px;
+}
+.barra input.unInput{
+    background-color: #FFF;
+    border: 1px solid #fff;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.barra .buscarButton{
+    text-align: center;
+    background-color: #FFF;
+    border: 1px solid #fff;
+    color: #666;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.burger-menu{
+    background-color: #0044AA;
+    color: white;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 20px;
+    margin: auto;
+}
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+.main-navbar{
+    display: none;
+}
+.main-navbar ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.main-navbar a{
+    text-decoration: none;
+    color: #222222;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+} 
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    right: 50px;
+}
+
+article{
+    margin: 0px 0px 10px 0px;
+}
+article div.main-article{
+    width: 100%;
+    border-top: 2px solid #ebebeb;
+    margin: 15px 15px 15px 15px;
+}
+
+#precioDiscount{
+    display: flex;
+    flex-direction: row;
+}
+p.price, p.discount{
+    flex-grow: 0.70;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount{
+    width: 70%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+
+section.banner img{
+    width: 100%;
+}
+
+
+
+@media (min-width: 361px) {
+
+    .barra input.unInput{
+        height: 30px;
+        width: 90%;
+    }
+    .barra .buscarButton{
+        width: 10%;
+    }
+
+    .logo{
+        width: 50%;
+        padding: 10px;
+    }
+    .copy-header{
+        font-size: 13px;
+        align-self: center;
+        margin: auto;
+        padding: 10px;
+    }
+    
+    .main-header-top-bar{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #precioDiscount{
+        padding-top: 10px;
+        padding-left: 20px;
+    }
+
+    main section article i{
+        display: flex;
+        position: relative;
+        right: -80%;
+        bottom: 15px;
+    }
+    .description{
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    nav{
+        display: none;
+    }
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: 769px) {
+    .products{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    .products article{
+        max-width: 300px;
+    }
+    .description{
+        display: flex;
+    }
+    .logo{
+        width: 250px;
+    }
+    .main-header-top-bar{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #red;
+    }
+
+
+
+    .barra{
+        width: 30%;
+        display: flex;
+        background-color: #FFF;
+        border-radius: 5px;
+    }
+    .barra input.unInput{
+        background-color: #FFF;
+        border: 1px solid #fff;
+        outline: none;
+        color: #666;
+        padding: 2px;
+        border-radius: 5px;
+    }
+
+    .barra .buscarButton{
+        text-align: center;
+        background-color: #FFF;
+        border: 1px solid #fff;
+        color: #666;
+        width: 10%;
+        height: 30px;
+        border-radius: 5px;
+    }
+
+
+    .copy-header{
+        max-width: 260px;
+        font-size: 12px;
+
+    }
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .burger-menu{
+        display: none;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0px 7px;
+        
+    }
+    .main-navbar li a{
+        font-size: 13px;
+    }
+
+    
+}
+
+@media (min-width: 1200px) {
+
+    .products article{
+        max-width: 300px;
+    }
+    .main-header-top-bar{
+        background-color: #EAC926;
+    }
+    .logo{
+        width: 250px;
+    }
+    .copy-header{
+        max-width: none;
+        font-size: 18px;
+    }
+    input.unInput{
+        width: 500px;
+        height: 30px;
+    }
+    .buscarButton{
+        height: 30px;
+    }
+    .main-header-top-bar, .main-navbar, .barra{
+        max-width: 1200px;
+        margin: auto;
+    }
+    
+    .main-navbar {
+        margin-top: 40px;
+    }
+    .main-navbar li{
+        margin: 0 20px;
+    }
+}
+
+/*---------------------*//*---------------------*//*---------------------*/
+/*---------------------*//*---------------------*//*---------------------*/
+/*---------------------*//*---------------------*//*---------------------*/
+
+/* 
+
+
+header div.logo{
+    padding: 10px;
+}
+header nav{
+    font-size: 12px;
+}
+
+
+
+
+article div.main-article{
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    margin: 15px 15px 15px 15px;
+}
+
+
+@media (min-width: 769px) {
+    main section article{
+        box-shadow: 0px 0px 10px rgb(100,100,100);
+    }
+    .burger-menu{
+        display: none;
+    }
+} */
