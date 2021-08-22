@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+main{
+    text-align: center;
+}
+form{
+    display: block;
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+label.casilla {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+  }​
+main input{
+    border-radius: 20px;
+    border-color: white;
+    width: 100%;
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+}
+
+.usuario, .contrasena{
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+main form input.text{
+    border: none;
+    border-radius: 5px;
+    padding: 2px;
+    width: 100%;
+    margin-bottom: 5px;
+    height: 25px;
+    font-size: 16px;
+}
+
+main input::placeholder{
+    padding-left: 10px;
+}
+.buttons {
+
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.buttons .enviar{
+    background-color: #017eed;
+    color: white;
+    width: 100%;
+    height: 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+}
+
+.buttons .enviar:hover{
+    background-color:  #0022AA;
+}
+
+.buttons .borrar{
+    background-color: #d73743;
+    color: white;
+}
+
+label.avatar{
+    background-color: #18a2b8;
+}
+
+
+
+input[type="radio"]:checked+label { font-weight: bold; }

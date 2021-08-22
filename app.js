@@ -7,7 +7,7 @@ app.use(express.static('public'));
 
 let port = process.env.PORT || 3000;
 app.listen(port, ()=>{
-    console.log('Servidor funcionando en ' + port);
+    console.log('Servidor funcionando en http://localhost:' + port);
 });
 app.get('/', (req,res)=>{
     res.sendFile(path.join(__dirname, '/views/home.html'));
